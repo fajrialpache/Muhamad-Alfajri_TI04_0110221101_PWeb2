@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout css</title>
+</head>
+<style>
+     * {
+  box-sizing: border-box;
+}
+
+.header {
+  border:0px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  border:0px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.body{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.profil{
+    width: 200px;
+    height: auto;
+}
+.vidio{
+    width: 250px;
+   height: 250px;
+}
+.foto{
+    width: 100px;
+    height: auto;
+}
+</style>
+<body class="body">
+    <fieldset style="background-color: beige;">
+        <legend>I4F - Halaman Profil Direktori</legend>
+        <div class="row">
+            <div class="col-3">
+                <img class="profil" src="dd.jpg" alt="profil">
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>Nama Profil</h3>
+                    </div>
+                    <div class="col-6">
+                        <h3>Kategori</h3>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Muhamad Alfajri
+                    </div>
+                    <div class="col-6">
+                        Mahasiswa
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Perumahan kalibaru
+                    </div>
+                    <div class="col-6">
+                        Laki-laki
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Cilodong, Depok
+                    </div>
+                    <div class="col-6">
+                        Belum Menikah
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Email : <a href="muha21101ti@student.nurulfikri.ac.id">muha21101ti@student.nurulfikri.ac.id</a>
+                    </div>
+                    <div class="col-6">
+                        Menjadi Orang Sukses
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        Telephon :0895358098690
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                Saya merupakan mahasiswa STT-Nurul Fikri jurusan Terknik Informatika. Dijurusan ini saya benar-benar masih mentah atau belum mengerti apa-apa, tetapi
+            setelah berjalan 1 bulan alhamdulillah, saya mulai bisa untuk memahami setiap matakuliah atau materi yang di berikan oleh Dosen, walaupun
+            tidak semua matakuliah saya paham, ada beberapa matakuliah yang masih sangat asing bagi saya yaitu python, karna apa? karna salah saya yang
+            tidak mendalami materi tersebut :).
+            </div>
+            <div class="col-12">
+                Pengalaman saya selama satu bulan berada di STT-Nurul Fikri. Yang pasti saya sudah banyak mendapatkan teman. dari teman kelas ataupun luar kelas dari 1
+            jurusan ataupun beda jurusan saya juga sudah lumayan dekat dengan kaka kelas jadi kalau ada yang bingung kadang saya suka bertanya kepada dia.
+            Saya juga sudah lumayan banyak mengalami kejadian mistis seperti pulpen hilang teman tiba-tiba hilang tetapi tenyata tidak hilang melaikan mereka pergi tanpa
+            berpamitan :).
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <video controls class="vidio">
+                    <source src="Happier.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div style="padding-left: 60px;" class="col-4">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="foto" src="dd.jpg" alt="kanan">
+                    </div>
+                    <div class="col-6">
+                        <img class="foto" src="dd.jpg" alt="kiri">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img class="foto" src="dd.jpg" alt="kanan">
+                    </div>
+                    <div class="col-6">
+                        <img class="foto" src="dd.jpg" alt="kiri">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <fieldset>
+                    <legend>Lampiran Audio</legend>
+                    <audio controls>
+                        <source src="lagu.mp4">
+                    </audio>
+                    <audio controls>
+                        <source src="lagu2.mp3" type="audio/mp3">
+                    </audio>
+                    <audio controls>
+                        <source src="lagu3.mp3" type="audio/mp3">
+                    </audio>
+                    <audio controls>
+                        <source src="lagu.mp4">
+                    </audio>
+                </fieldset>
+            </div>
+        </div>
+    </fieldset>
+</body>
+</html>

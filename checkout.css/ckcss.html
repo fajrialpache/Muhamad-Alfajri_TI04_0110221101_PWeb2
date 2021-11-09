@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout.css</title>
+        <style>
+        * {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 0px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  border: 0px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.body{
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 2px solid;
+}
+.logo{
+    width: 10px;
+    height: 12px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+.logo-teks{
+    height: 10px;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+.icon{
+    width: 15px;
+    height: 15px;
+}
+.ceklis{
+    width: 80px;
+    height: 80px;
+}
+.visa{
+    width: 15px;
+    height: 15px;
+}
+.visaa{
+    width: 20px;
+    height: 20px;
+}
+        </style>
+</head>
+<body class="body">
+    <!-- baris 1 -->
+    <div style="background-color: darkcyan; padding-top: 10px; padding-bottom: 10px;" class="row">
+        <div class="col-2">
+            <img class="logo" src="blak.jpg" alt="blak">
+            <h3 class="logo-teks">Site Name</h3>
+        </div>
+        <div class="col-7">
+            <a href="#">Category 1</a>|
+            <a href="#">Category 2</a>|
+            <a href="#">Category 3</a>
+        </div>
+        <div class="col-3">
+            <img class="icon" src="cart.png" alt="troli">
+            <img class="icon" src="search.png" alt="search">
+             Cart (1)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <!-- baris 2.1 -->
+            <div class="row">
+                <div class="col-2">
+                    <img class="ceklis" src="checklist.png" alt="checcklist">
+                </div>
+                <div class="col-10">
+                    <p>Order 131217312</p>
+                    <h3>Thank You, Kenny</h3>
+                </div>
+            </div>
+            <hr>
+            <!-- baris 2.2 -->
+            <div class="row">
+                <div class="col-12">
+                    <p>Your order is confirmed</p>
+                    <p>we've accepted your order and we're gitting it ready</p>
+                </div>
+            </div>
+            <hr>
+            <!-- baris 2.3 -->
+            <div class="row">
+                <div class="col-12">
+                   <h3 style="margin: 0%;"> Costomer Information</h3>
+                </div>
+
+            </div>
+            <!-- baris 2.4 -->
+            <div class="row">
+                <div class="col-6">
+                    <P style="font-weight: bold;">Shipping Address</P>
+                    <P>Kenny Bostick</P>
+                    <a href="#">12 Woldo Point Road Mishouken. Ny I| 200 United States</a>
+                </div>
+                <div class="col-6">
+                    <p style="font-weight: bold;">Billing Address</p>
+                    <P>Kenny Bostick</P>
+                    <a href="#">12 Woldo Point Road Mishouken. Ny I| 200 United States</a>
+                </div>
+
+            </div>
+            <!-- baris 2.5 -->
+            <div class="row">
+                <div class="col-6">
+                    <p style="font-weight: bold;">Shipping Method</p>
+                    <p>UPS Ground( Estimated ship time of 3-6 days</p>
+
+                </div>
+                <div class="col-6">
+                     <p style="font-weight: bold;">Payment Method</p>
+                     <img class="visa" src="visa.png" alt="visa">
+                    Ending in 3217-$23.60   
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- baris 2 kolom kanan -->
+        <div style="margin-top: 50px; background-color: darkgrey;" class="col-4">
+            <div class="row">
+                <div class="col-12">
+                    <p style="font-weight: bold;">Summary (1 item)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    Subtotal
+                </div>
+                <div class="col-3">
+                    $20.00
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    Shipping
+                </div>
+                <div class="col-3">
+                    $2.20
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    Est. Taxes
+                </div>
+                <div class="col-3">
+                    $1.40
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    Gift Card or Discount Code
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <input type="text">
+                </div>
+                <div class="col-3">
+                    <button style="background-color: darkgray;">apply</button>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    Total
+                </div>
+                <div class="col-3">
+                    $23.60
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="background-color: black; height: 3px;">
+    <div class="row">
+        <div class="col-2">
+            Site Name
+            <br>
+            <img class="visaa" src="visa.png" alt="visa">
+            <img class="visaa" src="bulet.jpg" alt="bulet">
+            <img class="visaa" src="adidas.png" alt="adidas">
+        </div>
+        <div class="col-6">
+            <a href="#">Category x</a>|
+            <a href="#">Category y</a>|
+            <a href="#">Category z</a>
+        </div>
+        <div class="col-4">
+            Stay In Touch Join Our Newsletter
+            <input type="text" value="Enter Email">
+            <button style="background-color: darkgray;">subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
